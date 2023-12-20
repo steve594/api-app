@@ -1,10 +1,10 @@
 import requests
 from email_sender import email_sender
 #Key
-api_keys = "251e29fb7dc241848c84ea29dcb7b47f"
+api_keys = "your api key"
 
 #Endpoints
-api_url = "https://newsapi.org/v2/everything?q=tesla&from=2023-11-20&sortBy=publishedAt&apiKey=251e29fb7dc241848c84ea29dcb7b47f"
+api_url = "url"
 
 #Make request
 request = requests.get(api_url)
