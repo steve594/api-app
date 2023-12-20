@@ -16,8 +16,9 @@ display_content = request.json()
 body = ""
 for article in display_content["articles"]:
     if article["title"] is not None:
-        body = "Subject: Today's news" +"\n" +body + article["title"] + "\n" \
-               + article["description"] + 2*"\n"
+        body =  body + article["title"] + "\n" \
+               + article["description"] \
+               + 2*"\n"
 
 body = body.encode("utf-8")
 email_sender(message=body)
